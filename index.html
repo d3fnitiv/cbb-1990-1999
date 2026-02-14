@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>College Basketball SRS Table</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/jquery.dataTables.min.css">
+
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 16px; }
+    h1 { font-size: 20px; margin-bottom: 12px; }
+    .table-wrap { overflow-x: auto; }
+    table.dataTable thead th { white-space: nowrap; }
+  </style>
+</head>
+
+<body>
+
+<h1>College Basketball SRS (Sortable)</h1>
+
+<div class="table-wrap">
+<table id="cbbsrs" class="display" style="width:100%">
+  <thead>
+    <tr>
+      <th>YEAR</th>
+      <th>TEAM</th>
+      <th>COACH</th>
+      <th>SCORING LEAD</th>
+      <th>GAMES</th>
+      <th>WINS</th>
+      <th>LOSSES</th>
+      <th>WLDIFF</th>
+      <th>WIN%</th>
+      <th>WIN SCORE</th>
+      <th>PTSF</th>
+      <th>PTSA</th>
+      <th>PTDIFF</th>
+      <th>SRS</th>
+      <th>D1 TEAMS</th>
+      <th>SRS RANK</th>
+      <th>SRS SCORE</th>
+      <th>SOS</th>
+      <th>SOS RANK</th>
+      <th>SOS SCORE</th>
+      <th>NBA</th>
+      <th>SCORE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1996</td><td>Kentucky</td><td>Rick Pitino</td><td>Tony Delk</td><td>36</td><td>34</td><td>2</td><td>32</td><td>94.44%</td><td>32.11</td><td>91.4</td><td>69.4</td><td>22</td><td>32.14</td><td>305</td><td>1</td><td>30.4</td><td>10.05</td><td>13</td><td>30.15</td><td>9</td><td>101.66</td></tr>
+    <tr><td>1999</td><td>Duke</td><td>Mike Krzyzewski</td><td>Elton Brand</td><td>39</td><td>37</td><td>2</td><td>35</td><td>94.87%</td><td>35.10</td><td>91.8</td><td>67.2</td><td>24.6</td><td>34.79</td><td>310</td><td>1</td><td>30.9</td><td>10.12</td><td>11</td><td>30.36</td><td>5</td><td>101.36</td></tr>
+    <tr><td>1998</td><td>Kentucky</td><td>Tubby Smith</td><td>Jeff Sheppard</td><td>39</td><td>35</td><td>4</td><td>31</td><td>89.74%</td><td>31.41</td><td>80.1</td><td>67</td><td>13.1</td><td>22.95</td><td>306</td><td>4</td><td>30.2</td><td>9.85</td><td>9</td><td>29.55</td><td>6</td><td>97.16</td></tr>
+    <tr><td>1998</td><td>UNC</td><td>Bill Guthridge</td><td>Antawn Jamison</td><td>38</td><td>34</td><td>4</td><td>30</td><td>89.47%</td><td>30.42</td><td>81.9</td><td>65.6</td><td>16.3</td><td>26.67</td><td>306</td><td>2</td><td>30.4</td><td>10.38</td><td>5</td><td>31.14</td><td>5</td><td>96.96</td></tr>
+    <tr><td>1995</td><td>UNC</td><td>Dean Smith</td><td>Jerry Stackhouse</td><td>34</td><td>28</td><td>6</td><td>22</td><td>82.35%</td><td>23.06</td><td>84.4</td><td>74</td><td>10.4</td><td>23.58</td><td>302</td><td>3</td><td>29.9</td><td>13.13</td><td>1</td><td>39.39</td><td>4</td><td>96.35</td></tr>
+    <tr><td>1992</td><td>Duke</td><td>Mike Krzyzewski</td><td>Christian Laettner</td><td>36</td><td>34</td><td>2</td><td>32</td><td>94.44%</td><td>32.11</td><td>88</td><td>72.6</td><td>15.4</td><td>24.7</td><td>298</td><td>3</td><td>29.5</td><td>10.21</td><td>14</td><td>28.4</td><td>6</td><td>96.01</td></tr>
+    <tr><td>1995</td><td>UCLA</td><td>Jim Harrick</td><td>Ed OBannon</td><td>33</td><td>31</td><td>2</td><td>29</td><td>93.94%</td><td>29.12</td><td>87.5</td><td>73.9</td><td>13.6</td><td>23.7</td><td>302</td><td>2</td><td>30</td><td>10.03</td><td>13</td><td>30.09</td><td>6</td><td>95.21</td></tr>
+    <tr><td>1997</td><td>Kentucky</td><td>Rick Pitino</td><td>Ron Mercer</td><td>40</td><td>35</td><td>5</td><td>30</td><td>87.50%</td><td>30.63</td><td>83.1</td><td>62.8</td><td>20.3</td><td>29.29</td><td>305</td><td>1</td><td>30.4</td><td>9.26</td><td>20</td><td>27.78</td><td>6</td><td>94.81</td></tr>
+    <tr><td>1999</td><td>Michigan St.</td><td>Tom Izzo</td><td>Morris Peterson</td><td>38</td><td>33</td><td>5</td><td>28</td><td>86.84%</td><td>28.66</td><td>71.7</td><td>59.5</td><td>12.2</td><td>22.64</td><td>310</td><td>7</td><td>30.3</td><td>10.91</td><td>6</td><td>32.73</td><td>3</td><td>94.69</td></tr>
+    <tr><td>1993</td><td>UNC</td><td>Dean Smith</td><td>Eric Montross</td><td>38</td><td>34</td><td>4</td><td>30</td><td>89.47%</td><td>30.42</td><td>86.1</td><td>68.3</td><td>17.8</td><td>29.04</td><td>298</td><td>1</td><td>29.7</td><td>11.24</td><td>3</td><td>29.5</td><td>5</td><td>94.62</td></tr>
+    <tr><td>1997</td><td>UNC</td><td>Dean Smith</td><td>Antawn Jamison</td><td>35</td><td>28</td><td>7</td><td>21</td><td>80.00%</td><td>22.40</td><td>77.4</td><td>66.7</td><td>10.7</td><td>21.23</td><td>305</td><td>6</td><td>29.9</td><td>12</td><td>1</td><td>36</td><td>4</td><td>92.30</td></tr>
+    <tr><td>1997</td><td>Kansas</td><td>Roy Williams</td><td>Raef LaFrentz</td><td>36</td><td>34</td><td>2</td><td>32</td><td>94.44%</td><td>32.11</td><td>84.9</td><td>66.1</td><td>18.8</td><td>26.6</td><td>305</td><td>2</td><td>30.3</td><td>7.94</td><td>39</td><td>23.82</td><td>6</td><td>92.23</td></tr>
+    <tr><td>1999</td><td>UConn</td><td>Jim Calhoun</td><td>Richard Hamilton</td><td>36</td><td>34</td><td>2</td><td>32</td><td>94.44%</td><td>32.11</td><td>77.2</td><td>61.3</td><td>15.9</td><td>24.73</td><td>310</td><td>3</td><td>30.7</td><td>8.79</td><td>27</td><td>26.37</td><td>3</td><td>92.18</td></tr>
+    <tr><td>1998</td><td>Duke</td><td>Mike Krzyzewski</td><td>Roshown McLeod</td><td>36</td><td>32</td><td>4</td><td>28</td><td>88.89%</td><td>28.44</td><td>85.6</td><td>64.1</td><td>21.5</td><td>29.55</td><td>306</td><td>1</td><td>30.5</td><td>9.32</td><td>11</td><td>27.96</td><td>5</td><td>91.90</td></tr>
+    <tr><td>2000</td><td>Michigan State</td><td>Tom Izzo</td><td>Morris Peterson</td><td>39</td><td>32</td><td>7</td><td>25</td><td>82.05%</td><td>26.26</td><td>74.1</td><td>58.9</td><td>15.2</td><td>25.04</td><td>318</td><td>3</td><td>31.5</td><td>9.91</td><td>9</td><td>29.73</td><td>4</td><td>91.49</td></tr>
+    <tr><td>2000</td><td>Stanford</td><td>Mike Montgomery</td><td>Casey Jacobsen</td><td>41</td><td>37</td><td>4</td><td>33</td><td>90.24%</td><td>33.39</td><td>78.9</td><td>59.7</td><td>19.2</td><td>25.65</td><td>318</td><td>1</td><td>31.7</td><td>7.12</td><td>47</td><td>21.36</td><td>5</td><td>91.45</td></tr>
+    <tr><td>1991</td><td>UNC</td><td>Dean Smith</td><td>Rick Fox</td><td>35</td><td>29</td><td>6</td><td>23</td><td>82.86%</td><td>24.03</td><td>87.6</td><td>71.6</td><td>16</td><td>26.9</td><td>295</td><td>3</td><td>29.2</td><td>10.9</td><td>6</td><td>28.9</td><td>9</td><td>91.13</td></tr>
+    <tr><td>1996</td><td>UMass</td><td>John Calipari</td><td>Marcus Camby</td><td>37</td><td>35</td><td>2</td><td>33</td><td>94.59%</td><td>33.11</td><td>74.8</td><td>62.4</td><td>12.4</td><td>21.38</td><td>305</td><td>6</td><td>29.9</td><td>8.92</td><td>25</td><td>26.76</td><td>1</td><td>90.77</td></tr>
+    <tr><td>1993</td><td>Michigan</td><td>Steve Fisher</td><td>Chris Webber</td><td>36</td><td>31</td><td>5</td><td>26</td><td>86.11%</td><td>26.69</td><td>81.9</td><td>71.8</td><td>10.1</td><td>22.01</td><td>298</td><td>7</td><td>29.1</td><td>11.89</td><td>1</td><td>29.7</td><td>5</td><td>90.49</td></tr>
+    <tr><td>1993</td><td>Indiana</td><td>Bob Knight</td><td>Calbert Cheaney</td><td>35</td><td>31</td><td>4</td><td>27</td><td>88.57%</td><td>27.46</td><td>86.5</td><td>71.6</td><td>14.9</td><td>25.83</td><td>298</td><td>4</td><td>29.4</td><td>11.09</td><td>4</td><td>29.4</td><td>4</td><td>90.26</td></tr>
+    <tr><td>1997</td><td>Minnesota</td><td>Clem Haskins</td><td>Bobby Jackson</td><td>35</td><td>31</td><td>4</td><td>27</td><td>88.57%</td><td>27.46</td><td>78.3</td><td>63.4</td><td>14.9</td><td>23.34</td><td>305</td><td>3</td><td>30.2</td><td>9.2</td><td>23</td><td>27.6</td><td>5</td><td>90.26</td></tr>
+    <tr><td>1991</td><td>UNLV</td><td>Jerry Tarkanian</td><td>Larry Johnson</td><td>35</td><td>34</td><td>1</td><td>33</td><td>97.14%</td><td>33.03</td><td>97.7</td><td>71</td><td>26.7</td><td>31.12</td><td>295</td><td>1</td><td>29.4</td><td>4.34</td><td>72</td><td>22.3</td><td>5</td><td>89.73</td></tr>
+    <tr><td>1995</td><td>Arkansas</td><td>Nolan Richardson</td><td>Corliss Williamson</td><td>39</td><td>32</td><td>7</td><td>25</td><td>82.05%</td><td>26.26</td><td>87.6</td><td>79.9</td><td>7.7</td><td>16.91</td><td>302</td><td>16</td><td>28.6</td><td>10.51</td><td>7</td><td>31.53</td><td>3</td><td>89.39</td></tr>
+    <tr><td>1991</td><td>Duke</td><td>Mike Krzyzewski</td><td>Christian Laettner</td><td>39</td><td>32</td><td>7</td><td>25</td><td>82.05%</td><td>26.26</td><td>87.7</td><td>73.4</td><td>14.3</td><td>24.91</td><td>295</td><td>4</td><td>29.1</td><td>10.63</td><td>9</td><td>28.6</td><td>5</td><td>88.96</td></tr>
+    <tr><td>1994</td><td>Arkansas</td><td>Nolan Richardson</td><td>Corliss Williamson</td><td>34</td><td>31</td><td>3</td><td>28</td><td>91.18%</td><td>28.26</td><td>93.4</td><td>75.6</td><td>17.8</td><td>23.97</td><td>301</td><td>1</td><td>30</td><td>7.64</td><td>45</td><td>25.6</td><td>3</td><td>86.86</td></tr>
+    <tr><td>1996</td><td>Syracuse</td><td>Jim Boeheim</td><td>John Wallace</td><td>38</td><td>29</td><td>9</td><td>20</td><td>76.32%</td><td>22.13</td><td>76.2</td><td>68.6</td><td>7.6</td><td>18.98</td><td>305</td><td>9</td><td>29.6</td><td>11.35</td><td>6</td><td>34.05</td><td>1</td><td>86.78</td></tr>
+    <tr><td>1993</td><td>Kentucky</td><td>Rick Pitino</td><td>Jamal Mashburn</td><td>34</td><td>30</td><td>4</td><td>26</td><td>88.24%</td><td>26.47</td><td>87.5</td><td>69.8</td><td>17.7</td><td>26.9</td><td>298</td><td>2</td><td>29.6</td><td>9.23</td><td>23</td><td>27.5</td><td>3</td><td>86.57</td></tr>
+    <tr><td>1997</td><td>Arizona</td><td>Lute Olsen</td><td>Michael Dickerson</td><td>34</td><td>25</td><td>9</td><td>16</td><td>73.53%</td><td>18.38</td><td>83.8</td><td>73.3</td><td>10.5</td><td>21.66</td><td>305</td><td>5</td><td>30</td><td>11.04</td><td>5</td><td>33.12</td><td>5</td><td>86.50</td></tr>
+    <tr><td>1994</td><td>UNC</td><td>Dean Smith</td><td>Eric Montross</td><td>35</td><td>28</td><td>7</td><td>21</td><td>80.00%</td><td>22.40</td><td>85.6</td><td>72.4</td><td>13.2</td><td>22.62</td><td>301</td><td>3</td><td>29.8</td><td>9.39</td><td>18</td><td>28.3</td><td>6</td><td>86.50</td></tr>
+    <tr><td>1998</td><td>Arizona</td><td>Lute Olsen</td><td>Michael Dickerson</td><td>35</td><td>30</td><td>5</td><td>25</td><td>85.71%</td><td>25.71</td><td>90.8</td><td>74.6</td><td>16.2</td><td>24.56</td><td>306</td><td>3</td><td>30.3</td><td>8.36</td><td>23</td><td>25.08</td><td>5</td><td>86.09</td></tr>
+    <tr><td>1993</td><td>Kansas</td><td>Roy Williams</td><td>Rex Walters</td><td>36</td><td>29</td><td>7</td><td>22</td><td>80.56%</td><td>23.36</td><td>84.4</td><td>69.7</td><td>14.7</td><td>22.3</td><td>298</td><td>6</td><td>29.2</td><td>10.88</td><td>6</td><td>29.2</td><td>4</td><td>85.76</td></tr>
+    <tr><td>1994</td><td>Arizona</td><td>Lute Olsen</td><td>Khalid Reeves</td><td>35</td><td>29</td><td>6</td><td>23</td><td>82.86%</td><td>24.03</td><td>89.3</td><td>74.4</td><td>14.9</td><td>23.76</td><td>301</td><td>2</td><td>29.9</td><td>8.9</td><td>24</td><td>27.7</td><td>4</td><td>85.63</td></tr>
+    <tr><td>2000</td><td>Cincinnati</td><td>Bob Huggins</td><td>Kenyon Martin</td><td>33</td><td>29</td><td>4</td><td>25</td><td>87.88%</td><td>25.48</td><td>77.6</td><td>61.5</td><td>16.1</td><td>24.62</td><td>318</td><td>4</td><td>31.4</td><td>8.5</td><td>31</td><td>25.5</td><td>3</td><td>85.38</td></tr>
+    <tr><td>1995</td><td>Kansas</td><td>Roy Williams</td><td>Jerod Haase</td><td>31</td><td>25</td><td>6</td><td>19</td><td>80.65%</td><td>20.16</td><td>83</td><td>70</td><td>13</td><td>22.15</td><td>302</td><td>6</td><td>29.6</td><td>10.02</td><td>14</td><td>30.06</td><td>5</td><td>84.82</td></tr>
+    <tr><td>1992</td><td>Indiana</td><td>Bob Knight</td><td>Calbert Cheaney</td><td>34</td><td>27</td><td>7</td><td>20</td><td>79.41%</td><td>21.44</td><td>83.4</td><td>65.8</td><td>17.6</td><td>30.05</td><td>298</td><td>1</td><td>29.7</td><td>12.43</td><td>2</td><td>29.6</td><td>4</td><td>84.74</td></tr>
+    <tr><td>1992</td><td>Cincinnati</td><td>Bob Huggins</td><td>Herb Jones</td><td>34</td><td>29</td><td>5</td><td>24</td><td>85.29%</td><td>24.74</td><td>79</td><td>63.1</td><td>15.9</td><td>21.67</td><td>298</td><td>15</td><td>28.3</td><td>5.94</td><td>6</td><td>29.2</td><td>2</td><td>84.24</td></tr>
+    <tr><td>1998</td><td>Stanford</td><td>Mike Montgomery</td><td>Arthur Lee</td><td>35</td><td>30</td><td>5</td><td>25</td><td>85.71%</td><td>25.71</td><td>80.2</td><td>68.3</td><td>11.9</td><td>18.95</td><td>306</td><td>10</td><td>29.6</td><td>8.12</td><td>26</td><td>24.36</td><td>4</td><td>83.67</td></tr>
+    <tr><td>2000</td><td>Florida</td><td>Billy Donovan</td><td>Mike Miller</td><td>37</td><td>29</td><td>8</td><td>21</td><td>78.38%</td><td>22.73</td><td>83.8</td><td>68.9</td><td>14.9</td><td>23.48</td><td>318</td><td>5</td><td>31.3</td><td>8.51</td><td>30</td><td>25.53</td><td>4</td><td>83.56</td></tr>
+    <tr><td>1994</td><td>Duke</td><td>Mike Krzyzewski</td><td>Grant Hill</td><td>34</td><td>28</td><td>6</td><td>22</td><td>82.35%</td><td>23.06</td><td>77.6</td><td>67.3</td><td>10.3</td><td>19.29</td><td>301</td><td>8</td><td>29.3</td><td>9</td><td>23</td><td>27.8</td><td>3</td><td>83.16</td></tr>
+    <tr><td>1996</td><td>Kansas</td><td>Roy Williams</td><td>Raef LaFrentz</td><td>34</td><td>29</td><td>5</td><td>24</td><td>85.29%</td><td>24.74</td><td>80.6</td><td>65.3</td><td>15.3</td><td>21.39</td><td>305</td><td>5</td><td>30</td><td>7.24</td><td>46</td><td>21.72</td><td>6</td><td>82.46</td></tr>
+    <tr><td>1992</td><td>Michigan</td><td>Steve Fisher</td><td>Jalen Rose</td><td>34</td><td>25</td><td>9</td><td>16</td><td>73.53%</td><td>18.38</td><td>77.9</td><td>71.4</td><td>6.5</td><td>18.79</td><td>298</td><td>13</td><td>28.5</td><td>12.29</td><td>3</td><td>29.5</td><td>5</td><td>81.38</td></tr>
+    <tr><td>2000</td><td>Wisconsin</td><td>Dick Bennett</td><td>Mark Vershaw</td><td>36</td><td>22</td><td>14</td><td>8</td><td>61.11%</td><td>13.44</td><td>59.9</td><td>55.8</td><td>4.1</td><td>16.67</td><td>318</td><td>25</td><td>29.3</td><td>12.5</td><td>2</td><td>37.5</td><td>1</td><td>81.24</td></tr>
+    <tr><td>1995</td><td>Oklahoma St.</td><td>Eddie Sutton</td><td>Bryant Reeves</td><td>37</td><td>27</td><td>10</td><td>17</td><td>72.97%</td><td>19.70</td><td>77.3</td><td>64.3</td><td>13</td><td>21.72</td><td>302</td><td>7</td><td>29.5</td><td>10.26</td><td>12</td><td>30.78</td><td>1</td><td>80.98</td></tr>
+    <tr><td>1991</td><td>Kansas</td><td>Roy Williams</td><td>Terry Brown</td><td>35</td><td>27</td><td>8</td><td>19</td><td>77.14%</td><td>20.83</td><td>84.2</td><td>69.6</td><td>14.6</td><td>24.78</td><td>295</td><td>5</td><td>29</td><td>11.37</td><td>5</td><td>29</td><td>2</td><td>80.83</td></tr>
+    <tr><td>1999</td><td>Ohio State</td><td>Jim OBrien</td><td>Michael Redd</td><td>36</td><td>27</td><td>9</td><td>18</td><td>75.00%</td><td>20.25</td><td>74.9</td><td>64.8</td><td>10.1</td><td>19.03</td><td>310</td><td>10</td><td>30</td><td>9.51</td><td>15</td><td>28.53</td><td>2</td><td>80.78</td></tr>
+    <tr><td>1995</td><td>UMass</td><td>John Calipari</td><td>Lou Roe</td><td>34</td><td>29</td><td>5</td><td>24</td><td>85.29%</td><td>24.74</td><td>80.9</td><td>65.7</td><td>15.2</td><td>23.19</td><td>302</td><td>4</td><td>29.8</td><td>8.07</td><td>37</td><td>24.21</td><td>2</td><td>80.75</td></tr>
+    <tr><td>1993</td><td>Duke</td><td>Mike Krzyzewski</td><td>Bobby Hurley</td><td>32</td><td>24</td><td>8</td><td>16</td><td>75.00%</td><td>18.00</td><td>86.4</td><td>71.2</td><td>15.2</td><td>25.98</td><td>298</td><td>3</td><td>29.5</td><td>10.76</td><td>7</td><td>29.1</td><td>4</td><td>80.60</td></tr>
+    <tr><td>2000</td><td>UNC</td><td>Bill Guthridge</td><td>Joseph Forte</td><td>36</td><td>22</td><td>14</td><td>8</td><td>61.11%</td><td>13.44</td><td>75.4</td><td>70.2</td><td>5.2</td><td>17</td><td>318</td><td>22</td><td>29.6</td><td>11.8</td><td>4</td><td>35.4</td><td>2</td><td>80.44</td></tr>
+    <tr><td>1995</td><td>UConn</td><td>Jim Calhoun</td><td>Ray Allen</td><td>33</td><td>28</td><td>5</td><td>23</td><td>84.85%</td><td>23.76</td><td>86</td><td>74.4</td><td>11.6</td><td>19.23</td><td>302</td><td>10</td><td>29.2</td><td>7.65</td><td>42</td><td>22.95</td><td>4</td><td>79.91</td></tr>
+    <tr><td>1994</td><td>Florida</td><td>Lon Kruger</td><td>Dan Cross</td><td>37</td><td>29</td><td>8</td><td>21</td><td>78.38%</td><td>22.73</td><td>75.1</td><td>67.9</td><td>7.2</td><td>16.18</td><td>301</td><td>21</td><td>28</td><td>9.08</td><td>20</td><td>28.1</td><td>1</td><td>79.83</td></tr>
+    <tr><td>1994</td><td>Kansas</td><td>Roy Williams</td><td>Steve Woodberry</td><td>35</td><td>27</td><td>8</td><td>19</td><td>77.14%</td><td>20.83</td><td>80.5</td><td>68.3</td><td>12.2</td><td>20.7</td><td>301</td><td>7</td><td>29.4</td><td>8.61</td><td>27</td><td>25.83</td><td>3</td><td>79.06</td></tr>
+    <tr><td>1994</td><td>UConn</td><td>Jim Calhoun</td><td>Donvell Marshall</td><td>34</td><td>29</td><td>5</td><td>24</td><td>85.29%</td><td>24.74</td><td>84.9</td><td>68.6</td><td>16.3</td><td>22.58</td><td>301</td><td>4</td><td>29.7</td><td>6.26</td><td>61</td><td>18.78</td><td>5</td><td>78.22</td></tr>
+    <tr><td>1996</td><td>Mississippi St.</td><td>Richard Williams</td><td>Darryl Wilson</td><td>34</td><td>26</td><td>8</td><td>18</td><td>76.47%</td><td>19.88</td><td>73.1</td><td>65.6</td><td>7.5</td><td>16.19</td><td>305</td><td>20</td><td>28.5</td><td>8.72</td><td>26</td><td>26.16</td><td>2</td><td>76.54</td></tr>
+    <tr><td>1994</td><td>UMass</td><td>John Calipari</td><td>Lou Roe</td><td>35</td><td>28</td><td>7</td><td>21</td><td>80.00%</td><td>22.40</td><td>76.4</td><td>65.9</td><td>10.5</td><td>16.69</td><td>301</td><td>19</td><td>28.2</td><td>6.21</td><td>62</td><td>23.9</td><td>2</td><td>76.50</td></tr>
+    <tr><td>1998</td><td>Utah</td><td>Rick Majerus</td><td>Michael Doleac</td><td>34</td><td>30</td><td>4</td><td>26</td><td>88.24%</td><td>26.47</td><td>70</td><td>57.6</td><td>12.4</td><td>17.08</td><td>306</td><td>18</td><td>28.8</td><td>4.9</td><td>79</td><td>14.7</td><td>4</td><td>73.97</td></tr>
+    <tr><td>1994</td><td>UCLA</td><td>Jim Harrick</td><td>Ed OBannon</td><td>28</td><td>21</td><td>7</td><td>14</td><td>75.00%</td><td>15.75</td><td>86.1</td><td>76.5</td><td>9.6</td><td>16.31</td><td>301</td><td>20</td><td>28.1</td><td>6.77</td><td>57</td><td>24.4</td><td>4</td><td>72.25</td></tr>
+    <tr><td>1997</td><td>Cincinnati</td><td>Bob Huggins</td><td>Danny Fortson</td><td>34</td><td>26</td><td>8</td><td>18</td><td>76.47%</td><td>19.88</td><td>80.7</td><td>65.5</td><td>15.2</td><td>20.71</td><td>305</td><td>8</td><td>29.7</td><td>5.5</td><td>75</td><td>16.5</td><td>3</td><td>69.08</td></tr>
+  </tbody>
+</table>
+</div>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- DataTables JS -->
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $('#cbbsrs').DataTable({
+      pageLength: 25,
+      order: [[21, 'desc']],  // default sort by SCORE
+      scrollX: true
+    });
+  });
+</script>
+
+</body>
+</html>
